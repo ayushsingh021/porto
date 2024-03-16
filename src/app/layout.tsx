@@ -32,7 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-black">
       <body className={clsx(urbanist.className, "relative min-h-screen")}>
-        <div className="absolute inset-0 h-screen w-full">
+        <Header />
+
+        {children}
+        <div className="absolute inset-0 -z-50 h-screen w-full">
           <SparklesCore
             id="tsparticlesfullpage"
             background="transparent"
@@ -43,8 +46,6 @@ export default function RootLayout({
             particleColor="#FFFFFF"
           />
         </div>
-        <Header />
-        {children}
         <div className="background-gradient absolute inset-0 -z-50 max-h-screen" />
         <div className="pointer-events-none absolute inset-0 -z-40 h-full opacity-20 mix-blend-soft-light"></div>
         <Footer />
