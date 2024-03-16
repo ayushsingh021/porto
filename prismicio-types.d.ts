@@ -764,30 +764,30 @@ export type ExperienceSlice = prismic.SharedSlice<
  */
 export interface HeroSliceDefaultPrimary {
   /**
-   * First Name field in *Hero → Primary*
+   * Ayush field in *Hero → Primary*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: *None*
+   * - **Placeholder**: Ayush
    * - **API ID Path**: hero.primary.first_name
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   first_name: prismic.KeyTextField;
 
   /**
-   * Last Name field in *Hero → Primary*
+   * Singh field in *Hero → Primary*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: *None*
+   * - **Placeholder**: Singh
    * - **API ID Path**: hero.primary.last_name
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */
   last_name: prismic.KeyTextField;
 
   /**
-   * Tag Line field in *Hero → Primary*
+   * Software Developer field in *Hero → Primary*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: *None*
+   * - **Placeholder**: Software Developer
    * - **API ID Path**: hero.primary.tag_line
    * - **Documentation**: https://prismic.io/docs/field#key-text
    */

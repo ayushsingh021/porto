@@ -15,22 +15,22 @@
         "first_name": {
           "type": "Text",
           "config": {
-            "label": "First Name",
-            "placeholder": ""
+            "label": "Ayush",
+            "placeholder": "Ayush"
           }
         },
         "last_name": {
           "type": "Text",
           "config": {
-            "label": "Last Name",
-            "placeholder": ""
+            "label": "Singh",
+            "placeholder": "Singh"
           }
         },
         "tag_line": {
           "type": "Text",
           "config": {
-            "label": "Tag Line",
-            "placeholder": ""
+            "label": "Software Developer",
+            "placeholder": "Software Developer"
           }
         }
       },
