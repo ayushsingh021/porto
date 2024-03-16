@@ -3,6 +3,7 @@ import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 import clsx from "clsx";
 import { KeyTextField, LinkField } from "@prismicio/client";
+import { IoMdPaperPlane } from "react-icons/io";
 
 type ButtonProps = {
   linkField: LinkField;
@@ -27,11 +28,11 @@ export default function Button({
     >
       <span
         className={clsx(
-          "absolute inset-0 z-0 h-full translate-y-9 bg-yellow-300 transition-transform  duration-300 ease-in-out group-hover:translate-y-0",
+          "absolute inset-0 z-0 h-full translate-y-0 bg-blue-300 transition-transform  duration-300 ease-in-out group-hover:translate-y-9",
         )}
       />
       <span className="relative flex items-center justify-center gap-2">
-        {label} {showIcon && <MdArrowOutward className="inline-block" />}
+        {label} {showIcon && <IoMdPaperPlane className="inline-block text-xl" />}
       </span>
     </PrismicNextLink>
   );

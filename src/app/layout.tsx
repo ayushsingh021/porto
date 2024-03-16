@@ -7,6 +7,7 @@ import { createClient, repositoryName } from "@/prismicio";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -29,8 +30,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-slate-900">
+    <html lang="en" className="bg-black">
       <body className={clsx(urbanist.className, "relative min-h-screen")}>
+        <div className="absolute inset-0 h-screen w-full">
+          <SparklesCore
+            id="tsparticlesfullpage"
+            background="transparent"
+            minSize={0.5}
+            maxSize={1}
+            particleDensity={70}
+            className="h-full w-full"
+            particleColor="#FFFFFF"
+          />
+        </div>
         <Header />
         {children}
         <div className="background-gradient absolute inset-0 -z-50 max-h-screen" />
